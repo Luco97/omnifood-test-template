@@ -17,7 +17,8 @@ Line heights
     Paragraph default: 1.6
 
 Spacing system (px)
-    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 
+    80 / 96 / 128
 
 --> Colores #######################################################################
 
@@ -29,8 +30,8 @@ Tonalidades
     #eb984e
 
 Shades
-    #cf711f
-    #45260a
+#cf711f
+#45260a
 
 
 --> Sombras #######################################################################
@@ -60,47 +61,6 @@ body {
 /* #################### */
 /* GENERAL USES SECTION #################### */
 /* #################### */
-
-/* #################### */
-
-/* #################### */
-/* HEADER SECTION #################### */
-/* #################### */
-
-/* #################### */
-
-/* #################### */
-/* HERO SECTION #################### */
-/* #################### */
-
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
-}
-
-.hero {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -1px;
-  color: #333;
-  margin-bottom: 3.2rem;
-}
-
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.5;
-  margin-bottom: 4.8rem;
-}
 
 .btn:link,
 .btn:visited {
@@ -139,6 +99,63 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
   color: #000;
 }
+
+/* #################### */
+
+/* #################### */
+/* HEADER SECTION #################### */
+/* #################### */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* Para un header sticky */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.4rem;
+}
+
+/* #################### */
+
+/* #################### */
+/* HERO SECTION #################### */
+/* #################### */
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
 
 .delivered-meals {
   display: flex;

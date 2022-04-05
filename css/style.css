@@ -124,6 +124,48 @@ body {
 /* #################### */
 
 /* #################### */
+/* HEADER SECTION #################### */
+/* #################### */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+  transition: all 0.3s;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  color: #fff;
+  background-color: #cf711f;
+}
+/* #################### */
+
+/* #################### */
 /* HERO SECTION #################### */
 /* #################### */
 
@@ -135,6 +177,7 @@ body {
 .hero {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
@@ -155,7 +198,6 @@ body {
   line-height: 1.5;
   margin-bottom: 4.8rem;
 }
-
 
 .delivered-meals {
   display: flex;

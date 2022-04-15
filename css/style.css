@@ -118,6 +118,7 @@ body {
   text-align: center;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -725,6 +726,7 @@ body {
   background-image: linear-gradient(to right bottom, #cf711f ,#e67e22);
   border-radius: 11px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
 }
 
 .cta-text-box {
@@ -753,5 +755,64 @@ body {
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  background-color: #fdf2e9;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form select {
+
+  border-radius: 10px;
+}
+
+.cta-form select option {
+  border-radius: 10px;
+}
+
+.cta-form button {
+  border: none;
+  cursor: pointer;
+}
+
+.btn-form {
+  background-color: #2e1907;
+  color: #fdf2e9;
+  align-self: end;
+}
+
+.btn-form:hover {
+  background-color: #fdf2e9;
+  color: #555;
+}
+
+*:focus {
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+.cta-form *:focus {
+  box-shadow: 0 0 0 0.8rem rgba(0, 0, 0, 0.5);
 }
 /* #################### */

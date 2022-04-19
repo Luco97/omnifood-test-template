@@ -58,6 +58,55 @@
     font-size: 50%;
   }
 
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 0, 0, 0.438);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateX(100%);
+
+    transition: all 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .main-nav-list {
+    gap: 4.8rem;
+    flex-direction: column;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     gap: 6.4rem;
@@ -67,7 +116,7 @@
   .hero-img-box {
     text-align: center;
   }
-  
+
   .delivered-meals {
     margin-top: 3.2rem;
     justify-content: center;
@@ -103,5 +152,46 @@
 
   .cta-form {
     grid-template-columns: 1fr;
+  }
+}
+
+/* 704px */
+
+@media (max-width: 44em) {
+
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;  
+  }
+
+  .grid-col-3,
+  .grid-col-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .footer .grid-col-5 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .footer-logo, .address {
+    grid-column: span 3;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
   }
 }

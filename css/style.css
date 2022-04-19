@@ -202,14 +202,15 @@ body {
 /* #################### */
 
 /* #################### */
-/* HEADER SECTION #################### */
+/* NAV SECTION #################### */
 /* #################### */
 
 .main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
+  transition: all 1s;
 }
 
 .main-nav-link:link,
@@ -554,6 +555,7 @@ body {
   display: grid;
   grid-template-columns: 0.6fr 0.4fr;
   background-color: #fdf2e9;
+  align-items: center;
 }
 
 .testimonials-container {
@@ -690,8 +692,8 @@ body {
   text-align: center;
 }
 
-.feature {
-}
+/* .feature {
+} */
 
 .feature-icon {
   color: #e67e22;
